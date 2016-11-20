@@ -11,14 +11,16 @@
     "precss": "^1.4.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/gulp",
+    "build": "./node_modules/.bin/gulp build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/s-kobets/VK-styleGallery.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/s-kobets/VK-styleGallery/issues"
   },
