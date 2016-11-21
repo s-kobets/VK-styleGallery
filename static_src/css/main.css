@@ -64,27 +64,12 @@
 .lg {
 
   .lg-actions .lg-next {
-    margin-top: -40px;
-    width: 50%;
-    height: 100%;
-    font-size: 0;
-    // background: url("../img/svg/right-arrow.svg") no-repeat;
-    // background-position: right top;
-    font-size: 0;
-
     @media (max-width: 640px) {
       display: none;
     }
   }
 
   .lg-actions .lg-prev {
-    top: 0;
-    // background: url("../img/svg/left-arrow.svg") no-repeat;
-    // background-position: left center;
-    height: 100%;
-    width: 50%;
-    font-size: 0;
-
     @media (max-width: 640px) {
       display: none;
     }
@@ -93,10 +78,6 @@
 }
 
 .lg-close {
-  // background: url("../img/images/icons.svg") no-repeat;
-  width: 50px;
-  height: 50px;
-  background-position: 15px 12px;
   z-index: 2020;
 }
 
