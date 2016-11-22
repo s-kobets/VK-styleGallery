@@ -8,13 +8,14 @@
 
 .lg-outer {
   z-index: 9997;
+
   #lg-counter {
     display: none;
   }
-  .lg-toolbar .lg-icon {
-    font-size: 0;
-  }
 
+  .lg-toolbar .lg-icon {
+    font-size: 32px;
+  }
 }
 
 @media (min-width: 641px) {
@@ -62,14 +63,28 @@
 }
 
 .lg {
-
+    
   .lg-actions .lg-next {
+    right: 0;
+    width: 50%;
+    height: 100%;
+    font-size: 32px;
+    text-align: right;
+    background: none;
+
     @media (max-width: 640px) {
       display: none;
     }
   }
 
   .lg-actions .lg-prev {
+    top: 0;
+    padding: calc(25% - 11px) 10px;
+    height: 100%;
+    width: 50%;
+    font-size: 32px;
+    background: none;
+
     @media (max-width: 640px) {
       display: none;
     }
@@ -78,15 +93,9 @@
 }
 
 .lg-close {
+  width: 50px;
+  height: 50px;
   z-index: 2020;
-}
-
-.lg-actions .lg-next {
-  background-position: -78px 13px;
-}
-
-.lg-actions .lg-prev {
-  background-position: -32px 13px;
 }
 
 .lg-img-wrap .lg-object {
@@ -95,31 +104,40 @@
 
 /*hover*/
 .lg:hover .lg-actions .lg-prev,
-.lg:hover .lg-actions .lg-next,
-.lg:hover .lg-inner + .lg-toolbar {
+.lg:hover .lg-actions .lg-next {
   opacity: 0.5;
 }
 
-.lg .lg-inner:hover + .lg-toolbar {
+.lg .lg-inner:hover + .lg-toolbar .lg-close {
   opacity: 1;
+  color: #fff;
 }
 
 .lg .lg-inner + .lg-toolbar:hover {
   opacity: 1;
+  color: #fff;
 }
 
 .lg .lg-actions .lg-prev:hover {
   opacity: 1;
+  color: #fff;
 }
 
 .lg .lg-actions .lg-next:hover {
   opacity: 1;
+  color: #fff;
 }
 
 .lg .lg-inner + .lg-toolbar.image-hovered {
   opacity: 0.5;
 }
 
+.lg .lg-inner + .lg-toolbar {
+  opacity: 1;
+  color: #fff;
+}
+
 .lg .lg-actions .lg-next.image-hovered {
   opacity: 1;
+  color: #fff;
 }
