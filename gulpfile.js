@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var watch = require('gulp-watch');
+var uglify = require('gulp-uglify');
 
 var path = {
     public: {
@@ -25,6 +26,11 @@ gulp.task('style', function () {
 
 gulp.task('script', function () {
     return gulp.src(path.src.js)
+        .pipe(uglify({
+            compress: {
+                drop_console: true
+            }
+        }))
         .pipe(gulp.dest(path.public.js));
 });
 

@@ -1,11 +1,11 @@
-$(document).ready(function() {
+(function() {
 
-	imgClickGalery();
+	$.fn.imgClickGalery = imgClickGalery;
 
-	function imgClickGalery() {
+	function imgClickGalery(name) {
 	    var $active;
 
-	    var $imgs = $('.image');
+	    var $imgs = $(name);
 
 	    $imgs.on('click', function (event) {
 	        var $this = $(this);
@@ -70,4 +70,4 @@ $(document).ready(function() {
 	        }
 	    });
 	}
-});
+}());
