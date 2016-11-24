@@ -1,7 +1,5 @@
 (function() {
-
-	$.fn.imgClickGalery = imgClickGalery;
-
+	
 	function imgClickGalery(name) {
 	    var $active;
 
@@ -69,5 +67,9 @@
 	            $active.data('lightGallery').destroy();
 	        }
 	    });
+	}
+
+	if (!$.fn.imgClickGalery || ($.fn.imgClickGalery && !$.fn.imgClickGalery.Constructor)) {
+		$.fn.imgClickGalery = imgClickGalery;
 	}
 }());
