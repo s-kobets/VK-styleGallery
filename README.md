@@ -1,20 +1,13 @@
-# Описание
-	
-  Приведенный здесь код, позволяет отобразить пуоведение
-  смены изображений в режиме просмотра галлереи, такой как
-  в соцсети VK.
-  Использую библиотеку lightgallery
+# Description
+  The code shown here allows you to display the change images in the gallery view mode, such as in the social network VK.
 
-	Пример использования в index.html  
+  Example usage in index.html
 
-# Install
+# Dependencies
+  - JQuery https://code.jquery.com/
+  - Lightgallery http://sachinchoolur.github.io/lightGallery/
 
-	npm i
-
-# Start
-
-	npm run start
-
-# Build
-
-	npm run build
+# Initial
+```javascript
+  $.fn.imgClickGalery(selector)`
+```
