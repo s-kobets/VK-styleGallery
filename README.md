@@ -11,3 +11,15 @@
 ```javascript
   $.fn.imgClickGalery(selector)`
 ```
+# Example
+```javascript
+  <div class="image">
+    <img src="http://lorempixel.com/output/people-q-c-640-480-7.jpg">
+    <img src="http://lorempixel.com/output/people-q-c-640-480-10.jpg">
+    <img src="http://lorempixel.com/output/people-q-c-640-480-9.jpg">
+  </div>
+  
+  <script>
+    $.fn.imgClickGalery('.image');
+  </script>
+```
