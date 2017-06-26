@@ -1,7 +1,7 @@
 {
   "name": "vk_style_gallery",
   "version": "1.0.0",
-  "description": "Представленный код, дает возможность использовать скролл,   так чтобы происходил переход от блока к блоку,    не убирая полосу прокрутки страницы и учитывая положение    ползунка.",
+  "description": "Mechanics of changing slides in both vk",
   "main": "public/js/main.js",
   "dependencies": {},
   "devDependencies": {
